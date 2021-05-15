@@ -14,14 +14,10 @@ const ArticleTemplate = ({ data }) => (
       </Link>
     </p>
     <StaticImage
-      src="https://res.cloudinary.com/dtiinb4c0/image/upload/v1620902741/my_blog1_1db7402bdd.png"
-      width={900}
-      height={500}
-      quality={95}
-      loading="lazy"
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
+      src={
+        "https://res.cloudinary.com/dtiinb4c0/image/upload/v1620902741/my_blog1_1db7402bdd.png"
+      }
+      alt=""
     />
     <ReactMarkdown children={data.strapiArticle.content} />
   </Layout>
